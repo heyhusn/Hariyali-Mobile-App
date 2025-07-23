@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/chat_bot_back_button_box"
+        android:src="@drawable/chat_bot_back"
+        android:contentDescription="Back" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/notes"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="Note Icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes for Care Journey"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_bold"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editNote"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="10dp"
+        android:hint="Write your plant care notes here..."
+        android:gravity="top"
+        android:background="#EBEBEB"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:inputType="textMultiLine"
+        android:maxLines="20"
+        android:scrollbars="vertical"
+        android:overScrollMode="always"/>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Splash_2_Java">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/second_image"
+        android:scaleType="centerCrop"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="24dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hariyali"
+            android:textColor="#25570B"
+            android:textSize="30sp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins_regular"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Welcome \nTo Hariyali"
+        android:textStyle=""
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Feel Fresh with plant Worlds.\nIt will enhace your living space!"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/registerButtonS2"
+        android:fontFamily="@font/poppins_semibold"
+        android:background="@drawable/custombtn_screen2"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="Register"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:id="@+id/loginButtonS2"
+        android:background="@drawable/custombtn_screen2"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="Login"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>
+
+</FrameLayout>

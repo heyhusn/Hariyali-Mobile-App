@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/etPlantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Plant Name"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etPlantDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Plant Description"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnDialogAdd"
+        android:text="Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

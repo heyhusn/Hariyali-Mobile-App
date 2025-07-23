@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/updatedplant"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MobileAppFinal"
+        tools:targetApi="31">
+
+        <activity android:name=".Activity_SetReminderActivity" />
+        <activity android:name=".NotePadActivity" />
+
+
+        <receiver android:name=".ReminderReceiver" android:exported="true" />
+
+        <receiver android:name=".NotificationActionReceiver" android:exported="true" />
+
+        <activity
+            android:name=".Activity_Add_Plant_Java"
+            android:exported="false" />
+        <activity android:name=".Activity_Update_Plant_Java" />
+
+        <activity
+            android:name=".Activity_Splash_Java"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity_youtube_card_1_Home_Java"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Host_Java"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Signin_Java"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Signup_Java"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Splash_2_Java"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Chat_Bot_Main_Java"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Image_Chatbot_Main_Java"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/image_chatbot_file_paths" />
+        </provider>
+    </application>
+
+</manifest>
